@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import styled from 'styled-components'
 
 const AwardItemWrapper = styled.div<{ url: string }>`
@@ -28,12 +29,12 @@ export default function AwardItem({
     <AwardItemWrapper url={imageUrl}>
       {labelArr.map((text, idx) => {
         return idx === labelArr.length ? (
-          <>{text}</>
+          <Fragment key={idx}>{text}</Fragment>
         ) : (
-          <>
+          <Fragment key={idx}>
             {text}
             <br />
-          </>
+          </Fragment>
         )
       })}
     </AwardItemWrapper>
