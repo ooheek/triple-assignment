@@ -47,7 +47,9 @@
   },
   "devDependencies": {
     "@titicaca/eslint-config-triple": "^3.1.0",
-    "@types/styled-components": "^5.1.25",
-    "eslint-plugin-promise": "^6.0.0"
+    "@types/styled-components": "^5.1.25"
+  },
+  "overrides": {
+    "eslint": "7.32.0"
   }
 }
