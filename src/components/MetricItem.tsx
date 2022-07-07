@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import styled from 'styled-components'
+import useCountUp from '../hooks/useCountUp'
 
 const MetricItemWrapper = styled.div`
   font-size: 36px;
@@ -15,10 +17,12 @@ export default function MetricItem({
   unit: string
   label: string
 }) {
+  const number = useCountUp(num)
+
   return (
     <MetricItemWrapper>
       <strong>
-        <span>{num}</span>
+        <span>{number}</span>
         {unit}
       </strong>
       의 {label}
