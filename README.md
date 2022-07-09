@@ -4,8 +4,10 @@ TRIPLE_2022 공개채용 프론트엔드 사전과제입니다. ✈️
 
 ### 구현내용 : Section 만들기
 
+[구현화면 바로가기 💻](https://triple-assignment-opal.vercel.app/)
+
 ![트리플_사전과제_구현](https://user-images.githubusercontent.com/61132249/178098646-d709d305-e971-4eed-aa85-7ce3b5eb84b1.GIF)
-<span style="color: grey">(실제 구현 화면입니다)</span>
+<span style="color: grey">(실제 구현화면입니다)</span>
 
 1. 영역별 등장 애니메이션
 
