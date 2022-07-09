@@ -4,6 +4,8 @@ import ContentLogo from './components/ContentLogo'
 import MetricItem from './components/MetricItem'
 import MetricsContainer from './components/MetricsContainer'
 import Wrapper from './components/Wrapper'
+import awardItemAndroid from './assets/images/play-store2x.png'
+import awardItemApple from './assets/images/badge-apple4x.png'
 
 function App() {
   return (
@@ -19,11 +21,11 @@ function App() {
       </MetricsContainer>
       <AwardsContainer animation={{ duration: 0.7, delay: 0.2 }}>
         <AwardItem
-          imageUrl="/images/play-store2x.png"
+          imageUrl={awardItemAndroid}
           labelArr={['2018 구글 플레이스토어', '올해의 앱 최우수상 수상']}
         />
         <AwardItem
-          imageUrl="/images/badge-apple4x.png"
+          imageUrl={awardItemApple}
           labelArr={['2018 애플 앱스토어', '오늘의 여행앱 선정']}
         />
       </AwardsContainer>

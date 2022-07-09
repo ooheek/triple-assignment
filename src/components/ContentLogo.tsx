@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 
 import { DurationAndDelayType, fadeInAppear } from '../styles/animation'
+import tripleLogoBackgroundImage from '../assets/images/triple2x.png'
 
 const ContentLogoWrapper = styled.div<DurationAndDelayType>`
   position: absolute;
@@ -12,7 +13,7 @@ const ContentLogoWrapper = styled.div<DurationAndDelayType>`
   font-size: 15px;
 
   box-sizing: border-box;
-  background-image: url(/images/triple2x.png);
+  background-image: url(${tripleLogoBackgroundImage});
   background-repeat: no-repeat;
   text-align: center;
   font-family: sans-serif;
