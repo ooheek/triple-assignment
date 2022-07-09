@@ -17,7 +17,7 @@ export default function MetricItem({
   unit: string
   label: string
 }) {
-  const number = useCountUp(num)
+  const number = useCountUp(num, 2000)
 
   return (
     <MetricItemWrapper>
