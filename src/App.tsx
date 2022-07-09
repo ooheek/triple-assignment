@@ -8,13 +8,16 @@ import Wrapper from './components/Wrapper'
 function App() {
   return (
     <Wrapper>
-      <ContentLogo label="2021년 12월 기준" />
-      <MetricsContainer>
+      <ContentLogo
+        label="2021년 12월 기준"
+        animation={{ duration: 0.7, delay: 0 }}
+      />
+      <MetricsContainer animation={{ duration: 0.7, delay: 0.1 }}>
         <MetricItem num={700} unit="만 명" label="여행자" />
         <MetricItem num={100} unit="만 개" label="여행 리뷰" />
         <MetricItem num={470} unit="만 개" label="여행 일정" />
       </MetricsContainer>
-      <AwardsContainer>
+      <AwardsContainer animation={{ duration: 0.7, delay: 0.2 }}>
         <AwardItem
           imageUrl="/images/play-store2x.png"
           labelArr={['2018 구글 플레이스토어', '올해의 앱 최우수상 수상']}

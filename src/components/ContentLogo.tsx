@@ -1,6 +1,7 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { DurationAndDelayType, fadeInAppear } from '../styles/animation'
 
-const ContentLogoWrapper = styled.div`
+const ContentLogoWrapper = styled.div<DurationAndDelayType>`
   position: absolute;
   top: 150px;
   width: 400px;
@@ -15,8 +16,23 @@ const ContentLogoWrapper = styled.div`
   text-align: center;
   font-family: sans-serif;
   color: rgba(58, 58, 58, 0.7);
+
+  animation: ${(props) =>
+    css`
+      ${fadeInAppear} ${props.duration}s linear ${props.delay}s
+    `};
 `
 
-export default function ContentLogo({ label }: { label: string }) {
-  return <ContentLogoWrapper>{label}</ContentLogoWrapper>
+export default function ContentLogo({
+  label,
+  animation,
+}: {
+  label: string
+  animation: DurationAndDelayType
+}) {
+  return (
+    <ContentLogoWrapper duration={animation.duration} delay={animation.delay}>
+      {label}
+    </ContentLogoWrapper>
+  )
 }
