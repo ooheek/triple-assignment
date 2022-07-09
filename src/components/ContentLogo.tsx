@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+
 import { DurationAndDelayType, fadeInAppear } from '../styles/animation'
 
 const ContentLogoWrapper = styled.div<DurationAndDelayType>`

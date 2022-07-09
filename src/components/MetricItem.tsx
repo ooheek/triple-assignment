@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import styled from 'styled-components'
+
 import useCountUp from '../hooks/useCountUp'
 
 const MetricItemWrapper = styled.div`

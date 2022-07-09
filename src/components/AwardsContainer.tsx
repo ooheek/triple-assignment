@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import styled, { css } from 'styled-components'
+
 import { DurationAndDelayType, fadeInAppear } from '../styles/animation'
 
 const AwardsContainerWrapper = styled.div<DurationAndDelayType>`

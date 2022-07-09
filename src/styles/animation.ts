@@ -13,4 +13,7 @@ to {
 }
 `
 
-export type DurationAndDelayType = { delay: number; duration: number }
+export interface DurationAndDelayType {
+  delay: number
+  duration: number
+}
